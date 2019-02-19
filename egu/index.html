@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="src/css/img/timg.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <!-- <link rel="stylesheet" href="src/css/common.css"> -->
+    <link rel="stylesheet" type="text/css" href="src/css/swiper.css">
+    <script src="src/lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="src/lib/jquery.cookie.js"></script>
+    <script src="src/lib/swiper.min.js" type="text/javascript"></script>
+    <script src="src/js/common.js"></script>
+    <script src="src/js/index.js"></script>
+
+    <title>egu365</title>
+
+
+</head>
+
+<body>
+    <div class="fixed ">
+        <div class="quick_links_panel">
+            <div id="quick_links" class="quick_links">
+                <li>
+                    <a href="#" class="mpbtn_recharge">
+                        <i class="chongzhi"></i>
+                    </a>
+                    <div class="mp_tooltip">个人中心
+                        <i class="icon_arrow_right_black"></i>
+                    </div>
+                </li>
+                <li id="shopCart">
+                    <a href="#" class="message_list">
+                        <i class="message"></i>
+                        <div class="span">购物车</div>
+                        <span class="cart_num">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="mpbtn_histroy">
+                        <i class="zuji"></i>
+                    </a>
+                    <!-- <div class="mp_tooltip" style="left: -121px; visibility: hidden;">我的足迹
+                                <i class="icon_arrow_right_black"></i>
+                            </div> -->
+                </li>
+                <li>
+                    <a href="#" class="mpbtn_wdsc">
+                        <i class="wdsc"></i>
+                    </a>
+                    <!-- <div class="mp_tooltip" style="left: -121px; visibility: hidden;">我的收藏
+                                <i class="icon_arrow_right_black"></i>
+                            </div> -->
+                </li>
+            </div>
+            <div class="quick_toggle">
+                <li>
+                    <a href="javascript:void(0);" onclick="zxkf();">
+                        <i class="zxkf"></i>
+                    </a>
+                    <!-- <div class="mp_tooltip">在线客服</div> -->
+                </li>
+                <li>
+                    <a href="#" class="mpbtn_kfzx">
+                        <i class="kfzx"></i>
+                    </a>
+                    <!-- <div class="mp_tooltip">客服热线
+                                <i class="icon_arrow_right_black"></i>
+                            </div> -->
+                </li>
+                <li>
+                    <a href="#none">
+                        <i class="mpbtn_qrcode"></i>
+                    </a>
+                    <div class="mp_qrcode" style="display:none;">
+                        <!-- <img src="/static/images/wx.png" width="148" height="175"> -->
+                        <i class="icon_arrow_white"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="#top" class="return_top">
+                        <i class="top"></i>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="egu">
+        <!-- 最顶部分 -->
+        <div class="top1">
+            <div class="content">
+                <ul class="ulle clear fl">
+                    <li class="fl welcome ">
+                        欢迎光临依谷网！
+                    </li>
+                    <li class="fl">
+                        <i></i>
+                        <a href="">收藏依谷网</a>
+                    </li>
+                </ul>
+                <ul class=" fr ulri clear">
+                    <li class="fr site">
+                        <i></i>
+                        <a href="######">关注依谷网
+                            <img src="src/img/wx.jpg" class=wx alt="">
+                        </a>
+                    </li>
+                    <li class="fr w-70">
+                        <a href="src/html/cart.html">购物车</a>
+                        &nbsp;&nbsp;|
+                    </li>
+                    <li class="fr w-80">
+                        <a class="kegb" href="src/html/register.html">免费注册</a>
+                        &nbsp;&nbsp;|
+                    </li>
+                    <li class="fr w-70">
+
+                        <a class="dlbtc" href="src/html/login.html">登陆</a>
+                        &nbsp;&nbsp;|
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="mycart">
+                加入购物车成功！
+            </div> -->
+        </div>
+        <!-- 物流配送入口 -->
+        <a href="######">
+            <div class="wxye"></div>
+        </a>
+        <!-- 吸顶部分 -->
+        <div class="head clear">
+            <div class="content clear">
+                <!-- logo部分 -->
+                <h1 class="logo fl">
+                    <a href="">依谷网</a>
+                </h1>
+                <!-- shoppCart -->
+                <div class="top_cart fr">
+                    <div class="shopp_cart">
+                        <span class="cetu">
+                            <i>0</i>
+                        </span>
+                        <a href="src/html/cart.html" class="fr">立即去结账
+                            <p class="zhedang"></p>
+                            <div class="shopp_list clear">
+                                <h3>最新加入的商品</h3>
+                                <ul class="spc clear">
+                                    <!-- <li class="clear">
+                                            <div class="sptp fl">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="miaos fl">
+                                                <div class="xiangq">一级台湾释迦5kg
+                                                    <p>￥398.00✖
+                                                        <span>1</span>
+                                                    </p>
+                                                </div>
+                                                <span class="fr" style="color: black">删除</span>
+                                            </div>
+                                        </li> -->
+                                </ul>
+                                <div>
+                                    <em class="kct fl">
+                                        <img src="src/img/cart/cart_k.png" alt="" width="50">
+                                    </em>
+                                    <em class="kcms kct fl">你的购物车空空的，赶紧选购吧！</em>
+                                </div>
+                                <div class="top_cart_xia_bt">
+                                    <span>共
+                                        <u class="ggjs">0</u>件商品&nbsp;&nbsp;共计
+
+                                    </span>
+                                    <strong>￥0.00</strong>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 搜索框 -->
+                <form action="" class="ser_form" id="ser_form">
+                    <div class=" fl top_serch">
+
+                        <input type="text" placeholder="进口车厘子">
+
+                        <span class="fr">
+                            <a href="#####">搜索</a>
+                        </span>
+                        <ul class="nav_ul clear">
+                            <li class="fl">
+                                <a href="">梅县沙田柚</a>
+                            </li>
+                            <li class="fl">
+                                <a href="src/html/list.html" target="_blank">年货礼盒</a>
+                            </li>
+                            <li class="fl">
+                                <a href="">大盆菜</a>
+                            </li>
+                            <li class="fl">
+                                <a href="">牛肉干</a>
+                            </li>
+                            <li class="fl">
+                                <a href="">法国红酒</a>
+                            </li>
+                            <li class="fl">
+                                <a href="">暖冬家纺</a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
+        <!-- nav -->
+        <div class="manu_all">
+            <div class="nav">
+                <div class="content clear">
+                    <!-- sort_all -->
+                    <div class="sort fl">
+                        <h2 style="text-align: center;">
+                            <a href="#####" class="qbsp">全部商品分类</a>
+                            <!-- <i></i> -->
+                        </h2>
+                        <ul class="nav_left">
+                            <li>
+                                <i></i> 水果蔬菜
+                                <div class="nav_right_01">
+                                    <dl>
+                                        <dt>国产水果</dt>
+                                        <dd>
+                                            <a href="">苹果</a>
+                                            <a href="">苹果</a>
+                                        </dd>
+
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <i></i>
+                                肉禽奶蛋
+                                <div class="nav_right_01">
+                                    <dl>
+                                        <dt>肉禽奶蛋</dt>
+                                        <dd>
+                                            <a href="">肉禽奶蛋</a>
+                                            <a href="">肉禽奶蛋</a>
+                                        </dd>
+
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <i></i>粮油副食
+                                <div class="nav_right_01">
+                                    <dl>
+                                        <dt>粮油副食</dt>
+                                        <dd>
+                                            <a href="">粮油副食</a>
+                                            <a href="">粮油副食</a>
+                                        </dd>
+
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <i></i>零食酒饮
+                                <div class="nav_right_01">
+                                    <dl>
+                                        <dt>零食酒饮</dt>
+                                        <dd>
+                                            <a href="">零食酒饮</a>
+                                            <a href="">零食酒饮</a>
+                                        </dd>
+
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <i></i>主题场景
+                                <div class="nav_right_01">
+                                    <dl>
+                                        <dt>主题场景</dt>
+                                        <dd>
+                                            <a href="">主题场景</a>
+                                            <a href="">主题场景</a>
+                                        </dd>
+
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <i></i>这箱有理</li>
+                            <li>
+                                <i></i>生活用品</li>
+                            <div class="sq">
+                                <img src="src/img/menu_arrow_top.png" alt="">
+                            </div>
+                        </ul>
+
+                    </div>
+                    <ul class="nav_head clear fl">
+                        <li class="fl">
+                            <a href="">首页</a>
+                        </li>
+                        <li class="fl">
+                            <a href="">礼品卡券</a>
+                        </li>
+                        <li class="fl">
+                            <a href="">安心宅配</a>
+                        </li>
+                        <li class="fl">
+                            <a href="">产地特色预定</a>
+                        </li>
+                        <li class="fl">
+                            <a href="">企业定制</a>
+                        </li>
+                        <li class="fl">
+                            <a href="">活动专区</a>
+                        </li>
+                        <li class="fl">
+                            <a href="">食尚资讯</a>
+                        </li>
+                        <li class="fl">
+                            <a href="">依谷扶贫</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- 轮播图 -->
+
+        <div class="swiper-container swiper-container-horizontal" id="swiper-container">
+            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-4988px, 0px, 0px);">
+
+                <div class="swiper-slide">
+                    <img src="src/img/1547709195376.jpg" height="468px">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="src/img/1548056132279.jpg" height="468px">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="src/img/1548228542090.jpg" height="468px">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="src/img/1547531668264.jpg" height="468px">
+                </div>
+                <div class="swiper-slide ">
+                    <img src="src/img/1547707921634.jpg" height="468px">
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- 分页 -->
+            <div class="swiper-pagination"></div>
+
+
+        </div>
+
+
+        <!-- 商品列表 -->
+        <div id="main">
+            <div class="content">
+                <div class="silie clear">
+                    <ul class="silie_ul">
+                        <li>
+                            <a href="#####">
+                                <img src="src/img/pro_hd_01.jpg" alt="" width="290">
+                                <p>
+                                    <span>安心月配</span>
+                                    荤素搭配 营养全面
+                                </p>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="src/img/pro_hd_02.jpg" alt="" width="290">
+                                <p>
+                                    <span>礼品卡券</span>
+                                    情浓意厚 贴心祝福
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="src/img/pro_hd_03.jpg" alt="" width="290">
+                                <p>
+                                    <span>企业定制</span>
+                                    品类繁多 精美设计
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="src/img/pro_hd_07.jpg" alt="" width="290">
+                                <p>
+                                    <span>年节活动</span>
+                                    套餐兑换 精准扶贫
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="discount clear">
+                    <div class="dis_l fl">
+                        <ul>
+                            <li>
+                                <a href="#####">
+                                    <img src="src/img/1547544179204.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="src/img/1547779701269.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dis_r fl">
+                        <p>
+                            <img src="src/img/bzbp-title.png" alt="#####
+                            ">
+                        </p>
+                        <div class="focus_show fl">
+
+                            <ul class="show_ul fl">
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/1547730090051.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="src/img/1547730033085.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="src/img/1547730125923.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="src/img/1547730157369.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                        <div class="solid_nav">
+                            <li>
+                                <img src="src/img/1547730090051.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="src/img/1547730033085.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="src/img/1547730125923.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="src/img/1547730157369.jpg" alt="">
+                            </li>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 商品分类 -->
+                <div class="navList">
+                    <div class="gfyh">
+                        <a href="#####">
+                            <img src="src/img/GFcard.png" alt="" width="1208" height="150">
+                        </a>
+                    </div>
+                    <!-- 水果蔬菜 -->
+                    <div class="goods_list clear">
+                        <div class="goods_list_l fl">
+                            <div class="vegetable">
+                                <a href="#####">
+                                    <span>水果蔬菜</span>
+                                </a>
+                            </div>
+                            <a href="#####">
+                                <img src="src/img/1544173936103.jpg" alt="" class="clz">
+                            </a>
+                        </div>
+                        <div class="goods_list_r fl">
+                            <div class="raisin fl">
+                                <a href="#####">
+                                    <img src="src/img/1542621519552.jpg" title="进口车厘子" alt="">
+                                </a>
+                            </div>
+                            <ul class="clear">
+                                <li class="li-213">
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201811121431456043.jpg" alt="" width="180" title="信丰安西脐橙">
+                                    </a>
+                                    <p>
+                                        <a href="#####">信丰安西脐橙5kg</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥88</span>
+                                        <s>￥108</s>
+                                    </div>
+                                </li>
+                                <li class="li-213">
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201710170955100017.jpg" alt="" width="180" title="台湾牛奶青枣">
+                                    </a>
+                                    <p>
+                                        <a href="#####">台湾牛奶青枣2.5kg</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="fl">
+                                <li class="li-213 li-xia">
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201504241659640043.jpg" alt="" width="180" title="一级台湾释迦">
+                                    </a>
+                                    <p>
+                                        <a href="#####">一级台湾释迦5kg</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥398</span>
+                                        <s>￥468</s>
+                                    </div>
+                                </li>
+                                <li class="li-213 li-xia">
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201811272118275018.jpg" alt="" width="180" title="依谷直供梅州沙田柚">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷直供梅州沙田柚4个装</a>
+                                    </p>
+                                    <div class="price ">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="apple fl">
+                                <a href="#####">
+                                    <img src="src/img/1543459936441.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="listsome">
+                        <a href="#####">
+                            <img src="src/img/flower.png" alt="">
+                        </a>
+                    </div>
+                    <!-- 肉禽奶蛋 -->
+                    <div class="goods_list clear">
+                        <div class="goods_list_l fl">
+                            <div class="fruits">
+                                <a href="#####">
+                                    <span>肉禽奶蛋</span>
+                                </a>
+                            </div>
+                            <a href="#####">
+                                <img src="src/img/1535533575155.jpg" alt="" class="clz">
+                            </a>
+                        </div>
+                        <div class="goods_list_r fl">
+                            <ul class="fl fruits_ul">
+                                <li>
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201807021142190040.jpg" alt="" width="180" title="依谷生态初生蛋（12枚）">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷生态初生蛋（12枚）</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥29.9</span>
+                                        <s>￥35.8</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201804181108842002.jpg" alt="" width="180" title="卡士餐后一小时（250g*3）">
+                                    </a>
+                                    <p>
+                                        <a href="#####">卡士餐后一小时（250g*3）</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥39.9</span>
+                                        <s>￥42</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201806281108827041.jpg" alt="" width="180" title="依谷汕头牛肉丸650g">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷汕头牛肉丸650g</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥69.90</span>
+                                        <s>￥79</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201709011126558035.jpg" alt="" width="180" title="澳洲原切雪花板腱500g">
+                                    </a>
+                                    <p>
+                                        <a href="#####">澳洲原切雪花板腱500g</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥81.8</span>
+                                        <s>￥199</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201806290938286028.jpg" alt="" width="180" title="梅林午餐肉340g">
+                                    </a>
+                                    <p>
+                                        <a href="#####">梅林午餐肉340g</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥17.8</span>
+                                        <s>￥18.8</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>加入购物车</h5>
+                                    <a href="#####">
+                                        <img src="src/img/201806141558865018.jpg" alt="" width="180" title="洪伟品源元贝">
+                                    </a>
+                                    <p>
+                                        <a href="#####">洪伟品源元贝</a>
+                                    </p>
+                                    <div class="price ">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="drink fl">
+                                <p>
+                                    <a href="#####">
+                                        <img src="src/img/1520912360113.jpg" alt="" width="220">
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#####">
+                                        <img src="src/img/1520912372627.jpg" alt="" width="220">
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#####">
+                                        <img src="src/img/1520912380012.jpg" alt="" width="220">
+                                    </a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="listsome">
+                        <a href="#####">
+                            <img src="src/img/commodity.png" alt="">
+                        </a>
+                    </div>
+                    <div class="goods_list clear">
+                        <div class="goods_list_l fl">
+                            <div class="grain">
+                                <a href="#####">
+                                    <span>粮油副食</span>
+                                </a>
+                            </div>
+                            <a href="#####">
+                                <img src="src/img/1543830642125.jpg" alt="" class="clz" width="365" height="445">
+                            </a>
+                        </div>
+                        <div class="goods_list_r fl">
+                            <ul class="fl fruits_ul">
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201809031820263011.jpg" alt="" width="180" title="依谷生态初生蛋（12枚）">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷生态初生蛋（12枚）</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥29.9</span>
+                                        <s>￥35.8</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201810091014902013.jpg" alt="" width="180" title="卡士餐后一小时（250g*3）">
+                                    </a>
+                                    <p>
+                                        <a href="#####">卡士餐后一小时（250g*3）</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥39.9</span>
+                                        <s>￥42</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201808021620715003.jpg" alt="" width="180" title="依谷汕头牛肉丸650g">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷汕头牛肉丸650g</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥69.90</span>
+                                        <s>￥79</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201808081531964021.jpg" alt="" width="180" title="澳洲原切雪花板腱500g">
+                                    </a>
+                                    <p>
+                                        <a href="#####">澳洲原切雪花板腱500g</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥81.8</span>
+                                        <s>￥199</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201901141748619012.jpg" alt="" width="180" title="梅林午餐肉340g">
+                                    </a>
+                                    <p>
+                                        <a href="#####">梅林午餐肉340g</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥17.8</span>
+                                        <s>￥18.8</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201809031820263011.jpg" alt="" width="180" title="洪伟品源元贝">
+                                    </a>
+                                    <p>
+                                        <a href="#####">洪伟品源元贝</a>
+                                    </p>
+                                    <div class="price ">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="drink fl">
+                                <p>
+                                    <a href="#####">
+                                        <img src="src/img/1520912360113.jpg" alt="" width="220">
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#####">
+                                        <img src="src/img/1520912372627.jpg" alt="" width="220">
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#####">
+                                        <img src="src/img/1520912380012.jpg" alt="" width="220">
+                                    </a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="listsome">
+                        <a href="#####">
+                            <img src="src/img/wine.png" alt="">
+                        </a>
+                    </div>
+                    <!-- 零食酒饮 -->
+                    <div class="goods_list clear">
+                        <div class="goods_list_l fl">
+                            <div class="snacks">
+                                <a href="#####">
+                                    <span>零食酒饮</span>
+                                </a>
+                            </div>
+                            <a href="#####">
+                                <img src="src/img/1532336942758.png" alt="" class="clz">
+                            </a>
+                        </div>
+                        <div class="goods_list_r fl">
+                            <div class="fl" width="410">
+                                <div class="raisin loo">
+                                    <a href="#####">
+                                        <img src="src/img/1523869030567.jpg" title="进口车厘子" alt="">
+                                    </a>
+                                </div>
+                                <div class="apple   loo">
+                                    <a href="#####">
+                                        <img src="src/img/1527039210314.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="fl">
+                                <li class="li-213 " style="float:none;">
+                                    <a href="#####">
+                                        <img src="src/img/201811272118275018.jpg" alt="" width="180" title="依谷直供梅州沙田柚">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷直供梅州沙田柚4个装</a>
+                                    </p>
+                                    <div class="price ">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                                <li class="li-213 li-xia">
+                                    <a href="#####">
+                                        <img src="src/img/201710170955100017.jpg" alt="" width="180" title="台湾牛奶青枣">
+                                    </a>
+                                    <p>
+                                        <a href="#####">台湾牛奶青枣2.5kg</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="right fl">
+                                <a href="#####">
+                                    <img src="src/img/1520923893515.jpg" alt="" width="205" height="520">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 主题场景 -->
+                    <div class="goods_list clear" style="margin-top: 50px;">
+                        <div class="goods_list_l fl">
+                            <div class="theme">
+                                <a href="#####">
+                                    <span>主题场景</span>
+                                </a>
+                            </div>
+                            <a href="#####">
+                                <img src="src/img/1520924197026.jpg" alt="" class="clz">
+                            </a>
+                        </div>
+                        <div class="goods_list_r fl">
+                            <div class="raisin fl">
+                                <a href="#####">
+                                    <img src="src/img/1520924340253.jpg" title="进口车厘子" alt="">
+                                </a>
+                            </div>
+                            <ul class="clear">
+                                <li class="li-213">
+                                    <a href="#####">
+                                        <img src="src/img/201708231644120002.jpg" alt="" width="180" title="信丰安西脐橙">
+                                    </a>
+                                    <p>
+                                        <a href="#####">信丰安西脐橙5kg</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥88</span>
+                                        <s>￥108</s>
+                                    </div>
+                                </li>
+                                <li class="li-213">
+                                    <a href="#####">
+                                        <img src="src/img/20180606093995022.jpg" alt="" width="180" title="台湾牛奶青枣">
+                                    </a>
+                                    <p>
+                                        <a href="#####">台湾牛奶青枣2.5kg</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="fl">
+                                <li class="li-213 li-xia">
+                                    <a href="#####">
+                                        <img src="src/img/201809071517347046.jpg" alt="" width="180" title="一级台湾释迦">
+                                    </a>
+                                    <p>
+                                        <a href="#####">一级台湾释迦5kg</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥398</span>
+                                        <s>￥468</s>
+                                    </div>
+                                </li>
+                                <li class="li-213 li-xia">
+                                    <a href="#####">
+                                        <img src="src/img/201411281518378034.jpg" alt="" width="180" title="依谷直供梅州沙田柚">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷直供梅州沙田柚4个装</a>
+                                    </p>
+                                    <div class="price ">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="apple fl">
+                                <a href="#####">
+                                    <img src="src/img/1520925246634.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 这箱有礼 -->
+                    <div class="goods_list clear" style="margin-top: 50px;">
+                        <div class="goods_list_l fl">
+                            <div class="box">
+                                <a href="#####">
+                                    <span>这箱有礼</span>
+                                </a>
+                            </div>
+                            <a href="#####">
+                                <img src="src/img/1531794234257.jpg" alt="" class="clz">
+                            </a>
+                        </div>
+                        <div class="goods_list_r fl">
+                            <ul class="fl fruits_ul">
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201807021142190040.jpg" alt="" width="180" title="依谷生态初生蛋（12枚）">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷生态初生蛋（12枚）</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥29.9</span>
+                                        <s>￥35.8</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201804181108842002.jpg" alt="" width="180" title="卡士餐后一小时（250g*3）">
+                                    </a>
+                                    <p>
+                                        <a href="#####">卡士餐后一小时（250g*3）</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥39.9</span>
+                                        <s>￥42</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201806281108827041.jpg" alt="" width="180" title="依谷汕头牛肉丸650g">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷汕头牛肉丸650g</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥69.90</span>
+                                        <s>￥79</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201709011126558035.jpg" alt="" width="180" title="澳洲原切雪花板腱500g">
+                                    </a>
+                                    <p>
+                                        <a href="#####">澳洲原切雪花板腱500g</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥81.8</span>
+                                        <s>￥199</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201806290938286028.jpg" alt="" width="180" title="梅林午餐肉340g">
+                                    </a>
+                                    <p>
+                                        <a href="#####">梅林午餐肉340g</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥17.8</span>
+                                        <s>￥18.8</s>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <img src="src/img/201806141558865018.jpg" alt="" width="180" title="洪伟品源元贝">
+                                    </a>
+                                    <p>
+                                        <a href="#####">洪伟品源元贝</a>
+                                    </p>
+                                    <div class="price ">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="drink fl">
+                                <p>
+                                    <a href="#####">
+                                        <img src="src/img/1520912360113.jpg" alt="" width="220">
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#####">
+                                        <img src="src/img/1520912372627.jpg" alt="" width="220">
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#####">
+                                        <img src="src/img/1520912380012.jpg" alt="" width="220">
+                                    </a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 生活用品 -->
+                    <div class="goods_list clear" style="margin: 50px 0;">
+                        <div class="goods_list_l fl">
+                            <div class="Life">
+                                <a href="#####">
+                                    <span>生活用品</span>
+                                </a>
+                            </div>
+                            <a href="#####">
+                                <img src="src/img/1523958683004.jpg" alt="" class="clz">
+                            </a>
+                        </div>
+                        <div class="goods_list_r fl">
+                            <div class="raisin fl">
+                                <a href="#####">
+                                    <img src="src/img/1520926684255.jpg" title="进口车厘子" alt="">
+                                </a>
+                            </div>
+                            <ul class="clear">
+                                <li class="li-213">
+                                    <a href="#####">
+                                        <img src="src/img/201807041649337029.jpg" alt="" width="180" title="信丰安西脐橙">
+                                    </a>
+                                    <p>
+                                        <a href="#####">信丰安西脐橙5kg</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥88</span>
+                                        <s>￥108</s>
+                                    </div>
+                                </li>
+                                <li class="li-213">
+                                    <a href="#####">
+                                        <img src="src/img/201807231034135008.jpg" alt="" width="180" title="台湾牛奶青枣">
+                                    </a>
+                                    <p>
+                                        <a href="#####">台湾牛奶青枣2.5kg</a>
+                                    </p>
+                                    <div class="price">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="fl">
+                                <li class="li-213 li-xia">
+                                    <a href="#####">
+                                        <img src="src/img/201708011127683019.jpg" alt="" width="180" title="一级台湾释迦">
+                                    </a>
+                                    <p>
+                                        <a href="#####">一级台湾释迦5kg</a>
+                                    </p>
+                                    <div class="price  ">
+                                        <span>￥398</span>
+                                        <s>￥468</s>
+                                    </div>
+                                </li>
+                                <li class="li-213 li-xia">
+                                    <a href="#####">
+                                        <img src="src/img/201805221022201044.jpg" alt="" width="180" title="依谷直供梅州沙田柚">
+                                    </a>
+                                    <p>
+                                        <a href="#####">依谷直供梅州沙田柚4个装</a>
+                                    </p>
+                                    <div class="price ">
+                                        <span>￥44.8</span>
+                                        <s>￥59.8</s>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="apple fl">
+                                <a href="#####">
+                                    <img src="src/img/1548145673342.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="bottom">
+            <div class="bottom_top clear">
+                <div class="content clear">
+                    <ul class="clear">
+                        <li>
+                            <p class="icon-fl fl">
+                                <img src="src/img/index-bottom-dao.png" alt="">
+                            </p>
+                            <div class="icon-fr fl">
+                                <h2>次日到达</h2>
+                                <span>当天16点前下单第二天送达</span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <p class="icon-fl fl">
+                                <img src="src/img/index-bottom-dai.png" alt="">
+                            </p>
+                            <div class="icon-fr fl">
+                                <h2>在线支付</h2>
+                                <span>多种便捷支付方式</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="icon-fl fl">
+                                <img src="src/img/index-bottom-song.png" alt="">
+                            </p>
+                            <div class="icon-fr fl">
+                                <h2>冷链配送</h2>
+                                <span>基地到餐桌全程冷链</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="icon-fl fl">
+                                <img src="src/img/index-bottom-tui.png" alt="">
+                            </p>
+                            <div class="icon-fr fl">
+                                <h2>24小时退换货</h2>
+                                <span>专业解答为你解惑</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="icon-fl fl">
+                                <img src="src/img/index-bottom-xuan.png" alt="">
+                            </p>
+                            <div class="icon-fr fl">
+                                <h2>基地优选材料</h2>
+                                <span>依谷更懂你的需求</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="links clear ">
+                <div class="content clear">
+                    <div class="links_l fl">
+                        <h2>依谷有话说</h2>
+                        <div class="sub_l fl">
+                            <a href="">
+                                <img src="src/img/1484587824775.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="sub_r fl">
+                            <ul class="clear sub_r_ul">
+                                <li>
+                                    <a href="#####">
+                                        <span>春节期间物流配送公告</span>
+                                    </a>
+                                    <p>
+                                        <a href="">
+                                            尊敬的依谷网客户：您好！值此新春佳节来临之际，依谷网在此感谢您长期以来对我们的信任与支持！为了不影响您的正常购物，现将春节期间有关配送服务事项告知如下：由于多数第三方快递、物流公司停单放假，1月28日省外订单将暂停配送（新疆、内蒙、西藏、黑龙江、青海、甘肃等偏远地区已停止发货），2月3日省内订单将暂停配送，生活用品类商品1月23日将暂停配送，实际配送时间以商品下单提示为准，2月14日省内外配送均恢复正常。400客服电话以及在线客服将于2月4日至2月12日暂停服务，将于2月13日恢复服务。不便之处，敬请谅解！
+                                            最后依谷网恭祝您春节快乐、阖家幸福！
+                                        </a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <span>关于客户热线4001100755暂停服务的通知​</span>
+                                    </a>
+                                    <p>
+                                        <a href="">
+                                            尊敬的依谷网客户：您好，由于系统升级，4001100755客服电话及在线客服将暂时无法正常使用。如有不便敬请谅解，感谢您对依谷网的支持！
+                                        </a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#####">
+                                        <span>关于客户热线4001100755暂停服务的通知</span>
+                                    </a>
+                                    <p>
+                                        <a href="">
+                                            关于客户热线4001100755暂停服务的通知尊敬的依谷网客户： 您好，由于系统升级，4001100755客服电话将暂时无法正常使用，期间您可使用在线客服进咨询，如有不便还请谅解，感谢您对依谷网的支持！
+                                        </a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links_r fl">
+                        <a href="">
+                            <img src="src/img/index-about.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/img/index-commonweal.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/img/index-job.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/img/index-statement.jpg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="eg_help clear">
+                <div class="content">
+                    <div class="eg_help_l fl">
+                        <dl class="fl">
+                            <dt>
+                                购物指南
+                            </dt>
+                            <dd>
+                                <a href="#####">
+                                    会员注册
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="#####">
+                                    套餐卡使用方法
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="#####">谷穗卡使用方法</a>
+
+                            </dd>
+                            <dd>
+                                <a href="">积分兑换</a>
+                            </dd>
+                        </dl>
+                        <dl class="fl">
+                            <dt>
+                                付款方式
+                            </dt>
+                            <dd>
+                                <a href="">线上支付</a>
+                            </dd>
+                            <dd>
+                                <a href="">发票说明</a>
+                            </dd>
+                            <dd>
+                                <a href="">余额支付</a>
+                            </dd>
+
+                        </dl>
+                        <dl class="fl">
+                            <dt>
+                                商品配送
+                            </dt>
+                            <dd>
+                                <a href="">卖家自取</a>
+                            </dd>
+                            <dd>
+                                <a href="">配送时间</a>
+                            </dd>
+                            <dd>
+                                <a href="">冷链配送</a>
+                            </dd>
+                            <dd>
+                                <a href="">送货范围及费用</a>
+                            </dd>
+                        </dl>
+                        <dl class="fl">
+                            <dt>
+                                售后服务
+                            </dt>
+                            <dd>
+                                <a href="">签收评价</a>
+                            </dd>
+                            <dd>
+                                <a href="">常见问题</a>
+                            </dd>
+                            <dd>
+                                <a href="">退换货说明</a>
+                            </dd>
+                            <dd>
+                                <a href="">品质保障</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="eg_help_r fr">
+                        <ul>
+                            <li class="fl">
+                                <span>
+                                    依谷微信
+                                </span>
+                                <img src="src/img/index-bottom-ygw-wx.jpg" alt="">
+                            </li>
+                            <li class="fr">
+                                <span>
+                                    依谷网APP
+                                </span>
+                                <img src="src/img/index-bottom-ygw-app.jpg" alt="">
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="Centered">
+                    <ul class="clear">
+                        <li>
+                            <a href="#####">关于依谷</a>&nbsp;&nbsp;|</li>
+                        <li>
+                            <a href="#####">加入依谷</a>&nbsp;&nbsp;|</li>
+                        <li>
+                            <a href="#####">联系依谷</a>&nbsp;&nbsp;|</li>
+                        <li>
+                            <a href="#####">免责声明</a>&nbsp;&nbsp;|</li>
+                        <li>
+                            <a href="#####">友情链接</a>&nbsp;&nbsp;|
+                        </li>
+                        <li>
+                            <a href="#####">依谷资讯</a>&nbsp;&nbsp;|</li>
+                        <li>
+                            <a href="#####">网站地图</a>&nbsp;&nbsp;|</li>
+                        <li>
+                            <a href="#####">客服在线</a>
+                        </li>
+                    </ul>
+                    <p class="p1">
+                        <a href="">
+                            <img src="src/img/dzswsfqy.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/img/kxwz.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/img/gxyz.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/img/govIcon.gif
+                            " alt="" height="50px">
+                        </a>
+                        <a href="">
+                            <img src="src/img/xfwq.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/img/zmpp.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/img/spltxkz.png" alt="">
+                        </a>
+                    </p>
+                    <p class="p2">
+                        Copyright © 2010-2018 所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。
+                        <br>
+                        <a href="">粤ICP备11016505号-9</a>
+                        | All Rights Reserved 深圳依谷网版权所有 网络实名：
+                        <a href="">依谷网</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
